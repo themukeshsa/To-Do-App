@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>To-Do App</title>
+
+  <meta name="description" content="Modern Glassmorphism Todo App" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+  rel="icon"
+
+  type="image/png"
+
+  href="./assets/logo.png">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="background">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <main class="app">
+    <header class="glass header">
+      <div>
+        <h1>✨ To-Do App</h1>
+        <p>Organize your day beautifully</p>
+      </div>
+
+      <div class="header-actions">
+        <button id="themeBtn" class="icon-btn">🌙</button>
+      </div>
+    </header>
+
+    <section class="glass creator">
+      <div class="input-group">
+        <input
+          id="taskInput"
+          type="text"
+          maxlength="100"
+          placeholder="What needs to be done?" />
+      </div>
+
+      <div class="row">
+        <input id="dateInput" type="date" />
+
+        <select id="priorityInput">
+          <option value="Low">🟢 Low</option>
+          <option value="Medium">🟡 Medium</option>
+          <option value="High">🔴 High</option>
+        </select>
+
+        <button id="addBtn" class="primary-btn">＋ Add Task</button>
+      </div>
+    </section>
+
+    <section class="glass controls">
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Search tasks..." />
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+    </section>
+
+    <section class="glass analytics">
+      <div class="stats">
+        <div>
+          <span id="totalTasks">0</span>
+          <label>Total</label>
+        </div>
+
+        <div>
+          <span id="activeTasks">0</span>
+          <label>Active</label>
+        </div>
+
+        <div>
+          <span id="completedTasks">0</span>
+          <label>Done</label>
+        </div>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-text">
+          <span>Progress</span>
+          <span id="progressPercent">0%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <div id="emptyState" class="glass empty-state">
+        <div class="empty-task">
+          <img src="./assets/empty.png" alt="No Tasks" class="empty-image" />
+        </div>
+
+        <h2>No Tasks Yet</h2>
+        <p>Create your first task and start building momentum.</p>
+      </div>
+
+      <div id="taskList" class="task-list"></div>
+    </section>
+
+    <footer class="glass footer">
+      <button id="clearCompleted" class="danger-btn">🗑️ Clear Completed</button>
+      <p>Press Enter to add quickly</p>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast">Task saved</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
