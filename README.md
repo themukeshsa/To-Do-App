@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✨ To-Do App
 
 A modern, responsive, and feature-rich Todo web application built using **HTML, CSS, and JavaScript**.
@@ -98,3 +99,6 @@ This project is open-source and available under the MIT License.
 
 Built with ❤️ by Mukesh.
 
+=======
+# To-Do-App
+>>>>>>> 3203e240e4787058d2719f6040a9dd4873adbeb7
