@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ✨ To-Do App
 
 A modern, responsive, and feature-rich Todo web application built using **HTML, CSS, and JavaScript**.
@@ -24,16 +23,13 @@ To-Do App uses a **Glassmorphism UI** with a clean and intuitive experience to h
 - 🎨 Glassmorphism UI
 
 ## 🖼️ Preview
-```html
-<p align="center">
 
+<p align="center">
   <img
     src="./assets/screenshot.png"
     alt="Glass Todo Screenshot"
     width="800">
-
 </p>
-```
 
 
 ## 🛠️ Tech Stack
@@ -98,7 +94,3 @@ This project is open-source and available under the MIT License.
 ---
 
 Built with ❤️ by Mukesh.
-
-=======
-# To-Do-App
->>>>>>> 3203e240e4787058d2719f6040a9dd4873adbeb7
